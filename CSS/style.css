@@ -21,26 +21,6 @@ nav ul li{
     list-style-type: none;
     font-size: 1rem;
 }
-.inicio::after{
-    content: '|';
-    padding: 160%;
-}
-.nosotros::after{
-    content: '|';
-    padding: 100%;
-}
-.materiales::after{
-    content: '|';
-    padding: 100%;
-}
-.cartelera::after{
-    content: '|';
-    padding: 100%;
-}
-.tramites::after{
-    content: '|';
-    padding: 100%;
-}
 a{
     color: white;
     text-decoration: none;
