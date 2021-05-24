@@ -1,0 +1,139 @@
+:root{
+    --primary-color: rgb(240, 89, 89);
+    --secondary-color: rgb(77, 255, 0);
+    --border-color: lightgreen;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: rgb(0, 0, 206);
+    color: white;
+    margin-bottom: 0px;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+nav ul li{
+    padding: 10px 0px;
+    list-style-type: none;
+    font-size: 1rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+main{
+    margin: 0%;
+}
+h1{
+    text-align: center;
+    color: var(--border-color);
+    text-decoration:underline solid var(--border-color) 8px
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.texto-bote-vidrio, .texto-papeles, .texto-carton, .texto-maceta, .texto-latas, .texto-plasticos{
+    display: none;
+    text-align: center;
+}
+.texto-bote-vidrio::before,
+.texto-papeles::before,
+.texto-carton::before,
+.texto-latas::before,
+.texto-plasticos::before{
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding-right: 10px;
+}
+.texto-maceta::before{
+    content: '\f00d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: red;
+    font-size: 40px;
+    padding-right: 10px;
+}
+span{
+    color: red;
+    font-size: 25px;
+}
+.img-vidrios:hover > .texto-bote-vidrio,
+.img-papeles:hover > .texto-papeles,
+.img-cartones:hover > .texto-carton,
+.img-macetas:hover > .texto-maceta,
+.img-latas:hover > .texto-latas,
+.img-plasticos:hover > .texto-plasticos{
+    display: block;
+    position: absolute;
+    top: 200px;
+    background-color: var(--primary-color);
+    color: black;
+    width: 180px;
+}
+.img-vidrios:hover > .texto-bote-vidrio{
+    left: 100px;
+}
+.img-papeles:hover > .texto-papeles{
+    left: 400px;
+}
+.img-cartones:hover > .texto-carton{
+    left: 700px;
+}
+.img-macetas:hover > .texto-maceta{
+    right: 40px;
+}
+.img-latas:hover > .texto-latas{
+    left: 100px;
+    top: 400px;
+}
+.img-plasticos:hover > .texto-plasticos{
+    left: 400px;
+    top: 400px;
+}
+.imagen-botellas-vidrio{
+    width: 250px;
+    border: 3px solid var(--border-color);
+    border-radius: 90px;
+}
+.imagen-papeles{
+    width: 230px;
+    border: 3px solid var(--border-color);
+    border-radius: 90px;
+}
+.imagen-carton{
+    width: 270px;
+    border: 3px solid var(--border-color);
+    border-radius: 90px;
+}
+.imagen-maceta{
+    width: 300px;
+    border: 3px solid var(--border-color);
+    border-radius: 90px;
+}
+.imagen-latas{
+    width: 330px;
+    border: 3px solid var(--border-color);
+    border-radius: 90px;
+}
+.imagen-plasticos{
+    width: 230px;
+    border: 3px solid var(--border-color);
+    border-radius: 90px;
+}
