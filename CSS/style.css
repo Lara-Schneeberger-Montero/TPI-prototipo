@@ -33,7 +33,7 @@ main{
     position: absolute;
     width: 100%;
     margin: 0;
-    background-image: url(/IMG/fondo-inicio.png);
+    background-image: url(../IMG/fondo-inicio.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
