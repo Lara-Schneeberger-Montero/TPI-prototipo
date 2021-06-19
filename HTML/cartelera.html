@@ -21,5 +21,42 @@
             </ul>
         </nav>
     </header>
+    <div class="barras-navegacion">
+    <input type="search" class="busqueda-barra" name="busqueda" placeholder="Filtro por categoria"><i class="fas fa-search" id="segunda"></i><input type="search" class="busqueda-barra-dos" placeholder="Filtro por zona"><i class="fas fa-search"></i>
+    </div>
+    <div class="contenedor-ofertas">
+        
+    </div>
+        <div class="postular-form">
+        <form action="" method="post">
+            <h3>Datos del postulante</h3>
+            <button type="button" class="cross" id="cross">X</button>
+            <input type="text" class="dni" placeholder="DNI">
+            <input type="text" class="nombre" placeholder="Nombre">
+            <input type="text" class="apellido" placeholder="Apellido">
+            <input type="email" class="email" placeholder="Email">
+            <input type="text" class="telefono" placeholder="Teléfono"><br>
+            <label for="direccion">Dirección</label><br>
+            <input type="text" name="direccion" placeholder="Calle">
+            <input type="text" name="numero" placeholder="Nro">
+            <input type="text" name="depto" placeholder="Depto">
+            <input type="text" name="piso" placeholder="Piso">
+            <select name="categoria" id="categoria">
+                <option value="caja">Entra en una caja</option>
+                <option value="baul">Entra en un baúl de un auto</option>
+                <option value="caja-camioneta">Entra en la caja de una camioneta</option>
+                <option value="camion">Necesito un camión</option>
+            </select>
+            <button class="reset" type="reset">Borrar</button>
+            <button class="enviar" type="button">Enviar</button>
+        </form>
+        
+    </div>
+    </div>
+    <footer>
+        <a href="./tramites.html"><button type="submit" class="avanzar"><i class="fas fa-angle-down"></i></button></a>
+    </footer>
+    <script src="../JS/listado-ofertas.js"></script>
+    <script src="../JS/cartelera.js"></script>
 </body>
 </html>

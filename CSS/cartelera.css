@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root{
+    --colorHeader: rgb(0, 0, 206);
+}
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 header{
-    background-color: rgb(0, 0, 206);
+    background-color: var(--colorHeader);
     color: white;
     margin-bottom: 0px;
 }
@@ -28,4 +32,136 @@ a{
 a:visited{
     color: white;
     text-decoration: none;
+}
+.barras-navegacion{
+    display: flex;
+    flex-direction: row;
+}
+.busqueda-barra,
+.busqueda-barra-dos{
+    width: 45%;
+    height: 40px;
+    position: relative;
+    margin: 10px auto;
+}
+.fa-search{
+    position: absolute;
+    top: 57px;
+    right: 50px;
+    font-size: 25px;
+}
+#segunda{
+    position: absolute;
+    top: 57px;
+    left: 580px;
+    font-size: 25px;
+}
+.contenedor-ofertas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+}
+.busqueda{
+    width: 40%;
+    margin: 20px 0;
+    font-size: 1rem;
+    border: 2px lightgreen solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+.btn{
+    width: 300px;
+    align-self: center;
+    margin-top: 10px;
+    background-color: lightgreen;
+    border: none;
+    padding: 10px;
+}
+.img-mapa{
+    width: 200px;
+    height: 130px;
+}
+h3, select{
+    text-align: center;
+}
+
+.postular-form{
+    display: none;
+} 
+.postular-form-dos{
+    /* display: none; */
+    width: 500px;
+    height: 510px;
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    z-index: 10000;
+    margin: auto;
+    background-color: lightgreen;
+    border-radius: 10px;
+    border-style: double;
+}
+.postular-form-dos input,
+.postular-form-dos select{
+    align-content: center;
+    padding: 5px;
+    margin: 5px;
+    width: 94%;
+}
+.postular-form-dos .enviar,
+.postular-form-dos .reset{
+    width: 40%;
+    margin-left: 30px;
+}
+.postular-form-dos .cross{
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+/* .cartel{
+    display: none;
+}
+.cartel-dos{
+    display: none;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    z-index: 1000000;
+    color: black;
+    background-color: rgb(98, 201, 98);
+    border-radius: 10px;
+} */
+label{
+    margin-left: 10px;
+}
+footer{
+    background-color: rgb(255, 231, 158);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 35px;
+}
+.avanzar{
+    background-color: rgb(255, 231, 158);
+    width: 50px;
+    height: 35px;
+    position: relative;
+    left: 640px;
+    border: none;
+}
+.fa-angle-down{
+    font-weight: 900;
+    font-size: 30px;
 }

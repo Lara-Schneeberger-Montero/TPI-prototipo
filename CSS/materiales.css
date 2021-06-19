@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
-    --primary-color: rgb(240, 89, 89);
+    --primary-color: rgb(255, 167, 167);
     --secondary-color: rgb(77, 255, 0);
     --border-color: lightgreen;
     --negative-color: red;
@@ -49,7 +49,7 @@ section{
     flex-wrap: wrap;
     margin: 0;
 }
-.texto-bote-vidrio, .texto-papeles, .texto-carton, .texto-maceta, .texto-latas, .texto-plasticos, .texto-tetra, .texto-env-alum{
+.texto-bote-vidrio, .texto-papeles, .texto-carton, .texto-latas, .texto-plasticos, .texto-tetra, .texto-env-alum{
     display: none;
     text-align: center;
 }
@@ -64,26 +64,17 @@ section{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: var(--secondary-color);
-    font-size: 30px;
-    padding-right: 10px;
-}
-.texto-maceta::before{
-    content: '\f00d';
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: var(--negative-color);
-    font-size: 40px;
+    font-size: 20px;
     padding-right: 10px;
 }
 .img-plasticos p span,
 .img-env-alum p span{
     color: var(--negative-color);
-    font-size: 25px;
+    font-size: 20px;
 }
 .img-vidrios:hover > .texto-bote-vidrio,
 .img-papeles:hover > .texto-papeles,
 .img-cartones:hover > .texto-carton,
-.img-macetas:hover > .texto-maceta,
 .img-latas:hover > .texto-latas,
 .img-plasticos:hover > .texto-plasticos,
 .img-tetra:hover > .texto-tetra,
@@ -93,7 +84,9 @@ section{
     top: 200px;
     background-color: var(--primary-color);
     color: black;
-    width: 180px;
+    width: 250px;
+    border-radius: 15px;
+    padding: 5px;
 }
 .img-vidrios:hover > .texto-bote-vidrio{
     left: 100px;
@@ -104,24 +97,20 @@ section{
 .img-cartones:hover > .texto-carton{
     left: 700px;
 }
-.img-macetas:hover > .texto-maceta{
-    right: 40px;
-}
 .img-latas:hover > .texto-latas{
-    left: 100px;
-    top: 400px;
+    right: 70px;
 }
 .img-plasticos:hover > .texto-plasticos{
-    left: 400px;
-    top: 400px;
+    left: 100px;
+    top: 390px;
 }
 .img-tetra:hover > .texto-tetra{
-    left: 700px;
-    top: 400px;
+    left: 600px;
+    top: 390px;
 }
 .img-env-alum:hover > .texto-env-alum{
-    right: 40px;
-    top: 400px;
+    right: 100px;
+    top: 390px;
 }
 .imagen-botellas-vidrio{
     width: 250px;
@@ -135,11 +124,6 @@ section{
 }
 .imagen-carton{
     width: 270px;
-    border: 3px solid var(--border-color);
-    border-radius: 90px;
-}
-.imagen-maceta{
-    width: 300px;
     border: 3px solid var(--border-color);
     border-radius: 90px;
 }
