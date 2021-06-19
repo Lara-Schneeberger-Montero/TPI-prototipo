@@ -1,7 +1,7 @@
 let contenedor = document.querySelector('.contenedor-ofertas');
 for (const oferta of listadoOfertas) {
     contenedor.innerHTML += `<div class="busqueda">
-    <span>${oferta.zona}<br>${oferta.categoria}<br>${oferta.observaciones}<br></span>
+    <span>Zona: ${oferta.zona}<br>Categoria: ${oferta.categoria}<br>Observaciones: ${oferta.observaciones}<br></span>
     <img src="${oferta.imgUrl}" alt="img-mapa" class="img-mapa">
     <button type="submit" class="btn">Postular</button>
 </div>`

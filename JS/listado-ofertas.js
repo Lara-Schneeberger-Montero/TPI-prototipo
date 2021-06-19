@@ -1,31 +1,30 @@
 const listadoOfertas = [
     {
-        zona: 'Zona: centrica',
+        zona: 'Centrica',
         categoria: 'Entra en una caja',
         observaciones: 'Lorem imput',
         imgUrl: '../IMG/gmap.png' 
         
     },
     {
-        zona: 'Zona: centrica',
+        zona: 'Centrica',
         categoria: 'Entra en una caja',
         observaciones: 'Lorem imput',
         imgUrl: '../IMG/gmap.png' 
         
     },
     {
-        zona: 'Zona: centrica',
+        zona: 'Centrica',
         categoria: 'Entra en una caja',
         observaciones: 'Lorem imput',
         imgUrl: '../IMG/gmap.png' 
         
     },
     {
-        zona: 'Zona: centrica',
+        zona: 'Centrica',
         categoria: 'Entra en una caja',
         observaciones: 'Lorem imput',
         imgUrl: '../IMG/gmap.png' 
         
     }
-
 ]
