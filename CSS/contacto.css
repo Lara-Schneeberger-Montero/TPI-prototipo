@@ -6,7 +6,7 @@ body{
     background-image: url(../IMG/fondo-inicio.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 85vh;
 }
 header{
     background-color: rgb(0, 0, 206);
